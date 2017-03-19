@@ -1,6 +1,4 @@
 # Style -non scss files
 .sass-cache
-*.map
-style.scss
-
+style/*.map
 

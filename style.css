@@ -73,6 +73,18 @@ header > nav > ul > li > a:hover {
 header > nav > img {
   padding: 10px 0; }
 
+#hamburger-menu {
+  display: none; }
+
+.hamburger-nav {
+  display: none;
+  color: white;
+  float: left;
+  font-size: 4em; }
+
+#hamburger-menu:checked ~ .main-nav {
+  display: block; }
+
 /*SLIDER */
 .hero {
   position: relative;
@@ -199,7 +211,7 @@ header > nav > img {
   transition: ease-out 0.5s; }
 
 /*PARAGRAPH */
-.paragraph h1 {
+h1 {
   text-transform: uppercase;
   font-weight: bold;
   font-family: Rock salt;
@@ -221,9 +233,7 @@ header > nav > img {
 
 .gallery img {
   width: 100%;
-  max-height: 268px;
-  float: left;
-  /*object-fit: cover */ }
+  float: left; }
 
 .layer {
   display: flex;
@@ -368,7 +378,7 @@ header > nav > img {
   line-height: 40px; }
 
 /*MEDIA QUERIES */
-@media (max-width: 1200px) {
+@media (max-width: 960px) {
   /*TABLET */
   .col-m-1 {
     width: 8.33%; }
@@ -406,23 +416,6 @@ header > nav > img {
   .col-m-12 {
     width: 100%; }
 
-  #navbar {
-    display: block; }
-
-  #logo {
-    float: none;
-    margin: 0 auto; }
-
-  header > nav > ul {
-    float: none; }
-
-  header > nav > ul > li {
-    display: block; }
-
-  header > nav > ul > li > a {
-    padding: 15px 20px;
-    border-bottom: 1px solid silver; }
-
   .slogan {
     left: 50%;
     top: 20%; }
@@ -432,13 +425,6 @@ header > nav > img {
 
   .i-hover {
     margin-bottom: 15px; }
-
-  .gallery .row {
-    padding: 0 10vw; }
-
-  .gallery img {
-    max-height: none;
-    width: 75%; }
 
   .numbers h2 {
     font-size: 1em; }
@@ -459,23 +445,9 @@ header > nav > img {
     height: 60px;
     line-height: 60px; }
 
-  .layer {
-    background: beige;
-    border-radius: 48px;
-    z-index: -1;
-    opacity: 1;
-    justify-content: center;
-    align-items: flex-end;
-    flex-direction: column;
-    top: 0; }
-
   .layer i {
     font-size: 10vw;
     padding: 1vw; }
-
-  .gallery [class*="col-"]:hover .layer {
-    transform: none;
-    transition: none; }
 
   .photo {
     width: 50%;
@@ -487,6 +459,9 @@ header > nav > img {
     color: initial; } }
 @media (max-width: 767px) {
   /* MOBILE */
+  .s-hidden {
+    display: none; }
+
   .col-s-1 {
     width: 8.33%; }
 
@@ -521,6 +496,29 @@ header > nav > img {
     width: 91.66%; }
 
   .col-s-12 {
-    width: 100%; } }
+    width: 100%; }
+
+  #navbar {
+    display: block; }
+
+  .main-nav {
+    display: none; }
+
+  .hamburger-nav {
+    display: inline; }
+
+  #logo {
+    float: none;
+    margin: 0 auto; }
+
+  header > nav > ul {
+    float: none; }
+
+  header > nav > ul > li {
+    display: block; }
+
+  header > nav > ul > li > a {
+    padding: 15px 20px;
+    border-bottom: 1px solid silver; } }
 
 /*# sourceMappingURL=style.css.map */
