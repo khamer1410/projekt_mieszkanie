@@ -3,7 +3,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lat|Open+Sans|Rock+Salt");
 body {
   margin: 0;
-  font-family: "Open Sans"; }
+  font-family: "Open Sans";
+  font-size: 16px;
+  overflow-x: hiden; }
 
 * {
   box-sizing: border-box; }
@@ -214,9 +216,9 @@ header > nav > img {
 h1 {
   text-transform: uppercase;
   font-weight: bold;
-  font-family: Rock salt;
+  font-family: "Open Sans";
   letter-spacing: 2px;
-  font-size: 1.5em; }
+  font-size: 1.4em; }
 
 .paragraph p {
   color: grey; }
@@ -298,15 +300,13 @@ h1 {
   background: url("https://images.freecreatives.com/wp-content/uploads/2015/05/Brick-Pattern-7.jpg"); }
 
 .promotion h2 {
-  margin-top: 15%;
+  margin-top: 20px;
   text-transform: uppercase;
   font-family: "Rock Salt";
   color: #fff;
   text-shadow: 2px 5px 3px black; }
 
 .promotion p {
-  width: 50%;
-  float: left;
   background: rgba(0, 0, 0, 0.4);
   padding: 24px;
   margin: 0;
@@ -314,7 +314,7 @@ h1 {
   text-shadow: 0px 3px 9px black; }
 
 .promotion img {
-  margin-top: 20%;
+  margin: 15px 0;
   width: 100%;
   border-radius: 15px;
   float: left; }
@@ -355,7 +355,7 @@ h1 {
 
 .contact .line {
   float: left;
-  margin: 41px 0 0 20px;
+  margin: 25px 0 0 20px;
   width: 20%;
   height: 3px;
   background-color: #fff; }
@@ -436,9 +436,6 @@ h1 {
     display: flex;
     justify-content: space-around; }
 
-  .contact h4, .contact p {
-    margin: 0.5em; }
-
   .social i {
     font-size: 2.2em;
     width: 60px;
@@ -456,12 +453,13 @@ h1 {
   .numbers div:hover h2 {
     transform: none;
     transition: ease-out 0.6s;
-    color: initial; } }
+    color: initial; }
+
+  .m-hidden {
+    display: none; } }
 @media (max-width: 767px) {
   /* MOBILE */
-  .s-hidden {
-    display: none; }
-
+  font-size: 12px;
   .col-s-1 {
     width: 8.33%; }
 
@@ -505,7 +503,8 @@ h1 {
     display: none; }
 
   .hamburger-nav {
-    display: inline; }
+    display: inline;
+    font-size: 60px; }
 
   #logo {
     float: none;
@@ -519,6 +518,9 @@ h1 {
 
   header > nav > ul > li > a {
     padding: 15px 20px;
-    border-bottom: 1px solid silver; } }
+    border-bottom: 1px solid silver; }
+
+  .s-hidden {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
